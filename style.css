@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'custom-font';
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Main layout of page */
+.main {
+    height: 100%;
+    display: flex;
+}
+
+/* Header layout of page */
+.header-container {
+    height: 100vh;
+    flex: 2;
+    background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    font-size: 64px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'custom-font', sans-serif;
+    color: white;
+    background-color: rgba(49, 49, 49, 0.5);
+    padding: 24px 0;
+    margin-top: 128px;
+}
+
+#logo {
+    height: auto;
+    width: 40px;
+}
+
+/* Content layout of page */
+.content-container {
+    flex: 3;
+}
+
+/* Form layour of page */
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-abstract {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8em 2em 2em;
+}
+
+.form-abstract p + p {
+    margin: 16px 0;
+}
+
+.form-title {
+    font-weight: 600;
+}
+
+.signup-section {
+    box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
+    padding: 16px 32px;
+}
+
+.user-details {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.item {
+    font-size: 16px;
+    color: rgb(109, 109, 109);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-top: 16px;
+}
+
+.item input {
+    width: 250px;
+    height: 24px;
+    border: 0.5px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+.item input:focus {
+    outline: 1px solid blue;
+    box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
+}
+
+button {
+    box-sizing: content-box;
+    font-size: 18px;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 16px 0 16px 32px;
+}
+
+.login-redirect {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 32px;
+}
+
+.login-redirect span {
+    color: #596D48;
+}
