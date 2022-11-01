@@ -70,7 +70,7 @@ button {
     width: 70%;
     font-size: 16px;
     font-weight: 600;
-    padding: 8em 2em 2em;
+    padding: 128px 32px 32px;
 }
 
 .form-abstract p + p {
@@ -109,8 +109,20 @@ button {
     border-radius: 5px;
 }
 
+/* Validation styling */
+
 .item input:focus {
     outline: 1px solid blue;
+    box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
+}
+
+/* input:valid {
+    outline: 1px solid lightgreen;
+    box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
+} */
+
+input[type="password"]:invalid {
+    outline: 1px solid red;
     box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
 }
 
